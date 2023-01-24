@@ -1,0 +1,51 @@
+.hero {
+  background-image: url(../images/bg/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center right;
+  &__inner {
+    padding: 230px 0 140px;
+    width: 50%;
+  }
+  &__subtitle {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  &__title {
+    max-width: 518px;
+    font-size: 68px;
+    line-height: 74px;
+    text-align: left;
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+  }
+  &__contact-btn {
+    @extend %roboto-700;
+    margin-right: 28px;
+  }
+  &__contact-phone {
+    padding-left: 88px;
+    display: flex;
+    flex-direction: column;
+    span {
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &-link {
+      font-size: 28px;
+      line-height: 36px;
+      color: $colorTitle;
+      @extend %roboto-700;
+      transition: 0.3s all;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        color: $colorAccent;
+        border-bottom: 2px solid $colorAccent;
+      }
+    }
+  }
+}

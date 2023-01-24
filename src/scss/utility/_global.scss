@@ -1,0 +1,37 @@
+body {
+  @extend %roboto-400;
+  font-size: 21px;
+  line-height: 30px;
+  color: $colorDefault;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1238px;
+}
+
+.btn {
+  padding: 18px 24px;
+  background: $colorAccent;
+  color: #fff;
+  border-radius: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  transition: 0.3s all;
+  &:hover {
+    background-color: #0568de;
+  }
+}
+
+.title {
+  font-size: 48px;
+  line-height: 58px;
+  color: $colorTitle;
+  text-align: center;
+  @extend %roboto-700;
+  margin-bottom: 22px;
+}
+.subtitle {
+  text-align: center;
+}
