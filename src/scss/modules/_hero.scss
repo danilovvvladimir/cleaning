@@ -40,10 +40,11 @@
       transform: translateY(-50%);
       width: 71px;
       height: 71px;
+      background-color: #fff;
       background-image: url(../images/icons/phone-icon.svg);
       background-repeat: no-repeat;
       background-position: center center;
-      border: 1px solid $colorDefault;
+      border: 1px solid #dcddeb;
       border-radius: 50%;
     }
     span {

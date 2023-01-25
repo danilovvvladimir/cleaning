@@ -1,0 +1,76 @@
+.articles {
+  padding: 240px 0 504px 0;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+  &__top-titles {
+    max-width: 447px;
+  }
+  &__title {
+    text-align: left;
+  }
+  &__subtitle {
+    text-align: left;
+  }
+  &__top-btns {
+    display: flex;
+    gap: 0 28px;
+  }
+  &__top-btn {
+    padding: 26px 38px;
+    @extend %roboto-700;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 594px;
+    position: relative;
+  }
+  &__item-about {
+    max-width: 536px;
+    padding: 52px 52px 65px 52px;
+    border: 1px solid #eff0f6;
+    box-shadow: 0px 2px 6px rgba(20, 20, 43, 0.04);
+    border-radius: 24px;
+    position: absolute;
+    background-color: #fff;
+    top: 305px;
+    left: 30px;
+    right: 30px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: $colorAccent;
+      right: 50px;
+      bottom: 50px;
+    }
+  }
+  &__item-link {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 34px;
+    @extend %roboto-700;
+    color: $colorTitle;
+    transition: 0.3s all;
+    margin-bottom: 17px;
+    &:hover {
+      color: $colorAccent;
+    }
+  }
+  &__item-subtitle {
+    margin-bottom: 15px;
+  }
+  &__item-date {
+    @extend %roboto-700;
+    font-size: 18px;
+    color: $colorTitle;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,111 @@
+.request {
+  padding: 240px 0;
+  background-color: #f7f9fc;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 66px;
+  }
+  &__text {
+    max-width: 482px;
+  }
+  &__text-top {
+    position: relative;
+    padding-top: 147px;
+    padding-bottom: 52px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #dcddeb;
+      height: 1px;
+      width: 480px;
+    }
+  }
+  &__title {
+    text-align: left;
+  }
+  &__subtitle {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  &__text-bottom {
+    padding-bottom: 55px;
+  }
+  &__text-bottom-title {
+    padding-top: 55px;
+    font-size: 28px;
+    text-align: left;
+    line-height: 36px;
+    margin-bottom: 9px;
+  }
+  &__text-bottom-subtitle {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  &__text-bottom-btn {
+    font-weight: 700;
+    box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
+  }
+  &__phone {
+    padding-right: 165px;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+    padding: 85px 61px;
+    max-width: 673px;
+    background: #ffffff;
+    border: 1px solid #eff0f6;
+    box-shadow: 0px 2px 6px rgba(20, 20, 43, 0.04);
+    border-radius: 16px;
+  }
+  &__form-label {
+    display: flex;
+    flex-direction: column;
+    max-width: 258px;
+    span {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 30px;
+      color: $colorTitle;
+    }
+  }
+  &__form-label-textarea {
+    width: 100%;
+    span {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 30px;
+      color: $colorTitle;
+    }
+  }
+  &__form-input {
+    border: 1px solid #eff0f6;
+    box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  &__form-textarea {
+    padding: 20px;
+    width: 100%;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #eff0f6;
+    box-shadow: 0px 2px 7px rgba(20, 20, 43, 0.08);
+    border-radius: 22px;
+    height: 144px;
+    resize: none;
+  }
+  &__form-btn {
+    padding: 26px 40px;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    border: none;
+  }
+}
