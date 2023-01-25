@@ -1,0 +1,130 @@
+.about {
+  padding: 200px 0;
+  position: relative;
+  &__areas {
+    display: flex;
+  }
+  &__areas-img {
+    max-width: 640px;
+    margin-right: 80px;
+    img {
+      width: 100%;
+    }
+  }
+  &__areas-textbox {
+    padding-top: 60px;
+    max-width: 500px;
+  }
+  &__areas-title,
+  &__differents-title {
+    text-align: left;
+    margin-bottom: 19px;
+  }
+  &__areas-subtitle,
+  &__differents-subtitle {
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 26px;
+  }
+  &__areas-buildings {
+    display: flex;
+    gap: 0 80px;
+    margin-bottom: 21px;
+  }
+  &__areas-buildings-list {
+    padding-left: 0;
+  }
+  &__areas-buildings-item {
+    padding-left: 35px;
+    font-size: 18px;
+    line-height: 20px;
+    @extend %roboto-700;
+    color: $colorTitle;
+    margin-bottom: 27px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 26px;
+      height: 26px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      border-radius: 50%;
+      background-color: #edf5ff;
+      background-image: url(../../images/icons/advantage-mark-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: absolute;
+    }
+  }
+  &__contact-btn {
+    padding: 26px 38px;
+    @extend %roboto-700;
+  }
+  &__differents {
+    padding-top: 196px;
+    display: flex;
+  }
+  &__differents-textbox {
+    padding-top: 24px;
+  }
+  &__differents-title {
+    max-width: 346px;
+  }
+  &__differents-subtitle {
+    max-width: 478px;
+  }
+  &__differents-extra {
+    display: block;
+    font-size: 12px;
+    line-height: 30px;
+    margin-bottom: 27px;
+    max-width: 440px;
+  }
+  &__differents-numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+  &__differents-number {
+    color: $colorTitle;
+    font-size: 54px;
+    line-height: 66px;
+    @extend %roboto-700;
+    position: relative;
+    span {
+      padding-top: 5px;
+      display: block;
+      font-size: 18px;
+      color: $colorDefault;
+      line-height: 24px;
+    }
+    &::after {
+      content: "+";
+      @extend %roboto-700;
+      position: absolute;
+      top: 2px;
+      font-size: 54px;
+      line-height: 66px;
+      right: -35px;
+      color: $colorAccent;
+    }
+  }
+  &__differents-img {
+    max-width: 686px;
+    img {
+      width: 100%;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: #dcddeb;
+    height: 1px;
+    width: 1220px;
+  }
+}
