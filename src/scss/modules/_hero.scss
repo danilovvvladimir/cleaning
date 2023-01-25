@@ -1,7 +1,7 @@
 .hero {
   background-image: url(../images/bg/hero-bg.svg);
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 720px;
   background-position: center right;
   &__inner {
     padding: 230px 0 140px;
@@ -16,6 +16,7 @@
     font-size: 68px;
     line-height: 74px;
     text-align: left;
+    margin-bottom: 22px;
   }
   &__contact {
     display: flex;
