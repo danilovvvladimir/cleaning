@@ -1,0 +1,123 @@
+.footer {
+  &__top {
+    padding: 156px 0 140px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      background-color: #dcddeb;
+      height: 1px;
+      width: 1220px;
+    }
+  }
+  &__info {
+    max-width: 312px;
+  }
+  &__title {
+    max-width: 304px;
+    text-align: left;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 34px;
+  }
+  &__decoration {
+    display: flex;
+    gap: 0 16px;
+  }
+  &__decoration-item {
+    width: 36px;
+    height: 36px;
+    background: #edf5ff;
+    border-radius: 8px;
+  }
+  &__contacts {
+    max-width: 312px;
+  }
+  &__top-title {
+    font-size: 20px;
+    line-height: 22px;
+    color: $colorTitle;
+    margin-bottom: 30px;
+  }
+  &__phone,
+  &__email,
+  &__address {
+    font-style: normal;
+    font-size: 18px;
+    display: block;
+    max-width: 259px;
+    line-height: 30px;
+  }
+  &__contacts-item {
+    margin-bottom: 18px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__hours {
+    max-width: 164px;
+  }
+  &__about {
+    max-width: 312px;
+  }
+  &__hours-list,
+  &__contacts-list {
+    padding-left: 0;
+  }
+  &__hours-item {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 18px;
+  }
+  &__hours-item:nth-child(odd) {
+    margin-bottom: 9px;
+    font-size: 18px;
+    line-height: 20px;
+    color: $colorTitle;
+    font-weight: 700;
+  }
+  &__phone-link {
+    color: $colorAccent;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  &__btn {
+    padding: 26px 40px;
+    font-weight: 700;
+  }
+  &__subtitle-phone {
+    margin-bottom: 20px;
+  }
+  &__copy {
+    padding: 40px 33px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  &__copy-textbox {
+    display: flex;
+    gap: 0 14px;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__copy-link {
+    color: $colorAccent;
+    border-bottom: 1px solid $colorAccent;
+  }
+}
